@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        IMAGE_NAME = 'yourdockerhubusername/ci-cd-demo-app'
+        IMAGE_NAME = 'Xlvin/ci-cd-demo-app'
     }
 
     stages {
@@ -32,9 +32,10 @@ pipeline {
         stage('Deploy Locally') {
             steps {
                 sh '''
-                    docker stop my-static-site || true
-                    docker rm my-static-site || true
-                    docker run -d --name my-static-site -p 8080:80 $IMAGE_NAME
+                    docker stop ci-cd-demo-app || true
+                    docker rm ci-cd-demo-app || true
+                    docker rmi $IMAGE_NAME || true
+                    docker run -d --name ci-cd-demo-app -p 8080:80 $IMAGE_NAME
                 '''
             }
         }

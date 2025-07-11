@@ -1,0 +1,32 @@
+        h1
+        {
+            color: skyblue;
+            text-align: center;
+            padding: 70px;
+            background-color: black;
+            font-style: oblique;
+        }
+        .paragraph-one
+        {
+            text-align: center;
+            color: skyblue;
+            text-align: center;
+            padding: 30px;
+            background-color: purple;
+            font-style: oblique;
+        }
+        .paragraph-two
+        {
+            text-align: center;
+            background-color: red;
+            padding: 30px;
+            font-style: oblique;
+        }
+        .paragraph-three
+        {
+            font-style: oblique;
+            text-align: center;
+            background-color: yellow;
+            padding: 30px;
+        }
+    
